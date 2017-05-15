@@ -1,0 +1,23 @@
+{
+  "name": "jackhandyapi",
+  "version": "0.0.1",
+  "repository":{
+    "type": "git",
+    "url": "https://github.com/andrewmundy/jackhandeyapi"
+  },
+  "description": "Official Jack Handey RESTful API",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "author": "Andrew Mundy",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongodb": "^2.2.26"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
