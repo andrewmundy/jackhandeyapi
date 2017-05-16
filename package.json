@@ -15,7 +15,8 @@
   "dependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
-    "mongodb": "^2.2.26"
+    "mongodb": "^2.2.26",
+    "mongoimport": "^1.0.6"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
