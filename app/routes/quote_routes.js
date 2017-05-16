@@ -1,5 +1,6 @@
 var ObjectID = require('mongodb').ObjectID;
 module.exports = function(app, db) {
+
   app.get('/quotes/:id', (req, res) => {
     const id = req.params.id;
     const details = { '_id': new ObjectID(id) };
@@ -11,6 +12,19 @@ module.exports = function(app, db) {
       }
     });
   });
+  //
+  // app.get('/quotes/random', (req, res) => {
+  //   const id = req.params.id;
+  //   const details = { '_id': new ObjectID(5) };
+  //   db.collection('quotes').findOne(details, (err, item) => {
+  //     if (err) {
+  //       res.send({'error':'An error has occurred'});
+  //     } else {
+  //       res.send(item);
+  //     }
+  //   });
+  // });
+
 app.post('/quotes', (req, res) => {
     const quote = { text: req.body.body, title: req.body.title };
     db.collection('quotes').insert(quote, (err, result) => {
