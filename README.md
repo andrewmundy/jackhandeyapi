@@ -1,6 +1,8 @@
 # Jack Handey API 🙇💭
 *Access the deep thoughts of legendary influencer*
 
+<img src="https://i.imgur.com/mTHlAfD.jpg">
+
 to utilize this API please use this
 
 ```
